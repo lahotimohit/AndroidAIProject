@@ -8,5 +8,5 @@ import retrofit2.http.Path
 
 interface AI_Interface {
     @GET("api/hello/{question}")
-    fun listRepos(@Path("question") question: String?): Call<JsonObject>
+    fun getResult(@Path("question") question: String?): Call<JsonObject>
 }
