@@ -11,5 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        binding.scbtn.setOnClickListener{
+
+        }
+
     }
 }
