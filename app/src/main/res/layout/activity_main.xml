@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/userinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter to Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Solution"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userinput"
+        app:layout_constraintVertical_bias="0.239"
+        tools:layout_editor_absoluteX="0dp" />
+
     <TextView
+        android:id="@+id/outputtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/scbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
